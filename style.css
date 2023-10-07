@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=IBM+Plex+Sans:wght@500&family=Lato:ital,wght@0,900;1,300;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&family=Yantramanav&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav{
+    height: 6em;
+    padding-left: 3rem;
+    padding-top: 0.5rem;   
+    box-shadow: 5px 5px #c5c5c5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+.hero_section{
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+}
+
+.green{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(16, 181, 16);
+    width: fit-content;
+}
+.right_hero{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+.right_hero_four{
+    background-color: orange;
+    width: fit-content;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 3rem;
+}
+.card_section{
+    display: flex;
+    gap: 10px;
+}
+.discount_section, .disc_section, .delivery_section{
+    min-width: 10px;
+}
+.menu_section{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+    gap: 10px;
+}
+.grid img{
+    width: 100%;
+    height: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-radius: 10px;
+    transition: all 0.1s ease-in;
+}
+.grid img:hover{
+  scale: 1.05;
+}
+.grid_item1{
+    grid-area: I1;
+}
+.grid_item2{
+    grid-area: I2;
+}
+.grid_item3{
+    grid-area: I3;
+}
+.grid_item4{
+    grid-area: I5;
+}
+.grid_item6{
+    grid-area: I6;
+}
+.grid_item7{
+    grid-area: I7;
+}
+.grid_item8{
+    grid-area: I8;
+}
+.headline_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.exploremenu{
+    padding: 2rem;
+    font-size: 4rem;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: rgb(247, 156, 156);
+    height: 7rpm;
+}
+.heading_footer{
+    font-size: 1.2rem;
+    color: grey;
+}
+@media (max-width:880px){
+    
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.menu_section{
+    padding: 3rem;
+}
+.headline_menu{
+    display: flex;
+}
+.headline_menu h5{
+    font-size: 2rem;
+    padding: 1rem;
+}
+footer img {
+    width:160px;
+}
+
+}
+@media(max-width:706px){
+.footer_container{
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+}
